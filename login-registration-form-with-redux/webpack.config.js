@@ -1,4 +1,4 @@
-var HtmlWebpackPlugin = require ("html-webpack-plugin");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
@@ -10,7 +10,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.jsx?x$/,
                 loader: "babel-loader"
             }
         ]

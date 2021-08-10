@@ -4,7 +4,7 @@ import React, {useEffect} from 'react'
 import "./styles.css";
 import {history} from "./components/helpers/history";
 import {alertActions} from "./components/actions/alert.action";
-import {PrivateRoute} from "./components/";
+import {PrivateRoute} from "./route/PrivateRoute";
 import {HomePage} from "./components/homepage/HomePage";
 import {RegisterPage} from "./components/registerpage/RegisterPage";
 import {LoginPage} from "./components/loginpage/LoginPage";
