@@ -2,20 +2,30 @@ import logo from './logo.svg';
 import './App.css';
 import Game from './components/Game';
 
-import {BrowserRouter as Router,
+import {BrowserRouter,
 Route, Switch} from 'react-router-dom'
+import Navbar from './components/Navbar';
+
+import About from "./components/About"
+
+import Home from "./components/Home"
+
+import Blog from "./components/Blog"
 
 function App() {
   return (
     <div className="App">
 
-<Router>
+      <BrowserRouter>
+      
+      <Route>
 
+      </Route>
 
-  <Switch>
-    <Route path="/game"  component={Game}/>
-  </Switch>
-</Router>
+      <Route path="/" exact component={Home}/>
+      
+      </BrowserRouter>
+
 
     </div>
   );
