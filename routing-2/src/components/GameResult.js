@@ -7,6 +7,9 @@ export default function GameResult() {
     const handleClick =() => {
         history.goBack();
     }
+
+
+  
     return (
         <div>
             <h1>Success</h1>
@@ -21,6 +24,7 @@ export default function GameResult() {
 
 
 <button onClick={handleClick}>Go Back</button>
+
             
         </div>
     )

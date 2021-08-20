@@ -25,6 +25,10 @@ export default function Game() {
         }
     }
 
+    const goForward = () => {
+        history.goForward();
+    }
+
     
     return (
         <div>
@@ -44,7 +48,14 @@ export default function Game() {
 
             <button onClick={handleClick}>Check Answer</button>
 
+
+        
+
             <h3>{!isCorrect && element}</h3>
+
+
+
+<button onClick={goForward}>Go Forward</button>
         </div>
     )
 }
