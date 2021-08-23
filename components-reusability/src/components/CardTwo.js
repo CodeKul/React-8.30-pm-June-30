@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function GameResult() {
+export default function CardTwo() {
     return (
         <div>
             

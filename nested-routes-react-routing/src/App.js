@@ -1,34 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
-import Game from './components/Game';
+import React from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import "./App.css";
+import Page from "./navigation/Page";
 
-import {BrowserRouter,
-Route, Switch} from 'react-router-dom'
-import Navbar from './components/Navbar';
-
-import About from "./components/About"
-
-import Home from "./components/Home"
-
-import Blog from "./components/Blog"
-
-function App() {
-  return (
-    <div className="App">
-
-      <BrowserRouter>
-      
-      <Route>
-
-      </Route>
-
-      <Route path="/" exact component={Home}/>
-      
-      </BrowserRouter>
-
-
-    </div>
-  );
-}
+const App = ({ routes }) => (
+  // We use <BrowserRouter> in order to support
+  // routing example hosted on GitHub pages.
+  // <BrowserRouter> could be safely replaced with <Router> in
+  // your production application.
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <Switch>
+      {routes.map(route => (
+        <Route key={route.path} path={route.path}>
+          <Page route={route} />
+        </Route>
+      ))}
+    </Switch>
+  </BrowserRouter>
+);
 
 export default App;
