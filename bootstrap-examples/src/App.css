@@ -6,6 +6,15 @@
   margin: 0;
 }
 
+nav.bg-primary{
+  background-color: red !important;
+}
+
+
+nav.bg-primary{
+  background-color: purple !important;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
