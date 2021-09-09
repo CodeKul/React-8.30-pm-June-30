@@ -1,5 +1,9 @@
 import React from "react";
 
+
+// 1.add class for form element -> .need-validation, add attribute novalidate as well
+// 
+
 export default function Modal() {
   return (
     <div>
@@ -25,18 +29,34 @@ export default function Modal() {
             </div>
 
             <div className="modal-body">
-              <form action="">
+              <form action="" className="needs-validation">
                 <div className="row">
                   <div className="col-6">
                     <label className="form-label">First Name</label>
-                    <input id="fName" type="text" className="form-control" />
+                    <input id="fName" type="text" className="form-control form-control-lg" />
+                 <div className="valid-feedback">
+                   Correct Input
+                 </div>
                   </div>
 
-                  <div className="col-6">
-                    <label htmlFor="fName" className="form-label">
+                  <div className="col-6 form-floating">
+                   
+                    <input id="lName" type="text" placeholder="Last Name" className="form-control form-control-sm" />
+                    <label htmlFor="fName" >
                       Last Name
                     </label>
-                    <input id="lName" type="text" className="form-control" />
+                  </div>
+                </div>
+
+                <div className="row">
+                  <div className="col-3">
+                    <input type="text" value="Codekul" className=" h-100 form-control" disabled readonly/>
+                  </div>
+
+                  <div className="input-group col-3">
+                    <input type="text" name="gender" className="form-control" />
+                    <button className="btn btn-primary">Submit</button>
+                    
                   </div>
                 </div>
               </form>
