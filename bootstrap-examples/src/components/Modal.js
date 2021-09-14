@@ -17,14 +17,14 @@ export default function Modal() {
       </button>
 
       <div id="modal" className="modal" data-bs-backdrop="static">
-        <div className="modal-dialog ">
-          <div className="modal-content">
-            <div className="modal-header">
+        <div className="modal-dialog  ">
+          <div className="modal-content ">
+            <div className="modal-header bg-primary">
               <h5 className="modal-title">Modal Dialog</h5>
               <button
                 type="button"
                 data-bs-dismiss="modal"
-                className="btn-close"
+                className="btn-close btn-close-white"
               ></button>
             </div>
 

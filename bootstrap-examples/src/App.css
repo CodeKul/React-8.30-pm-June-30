@@ -10,6 +10,10 @@ nav.bg-primary{
   background-color: red !important;
 }
 
+.list-group .list-group-item:active{
+  background-color: brown !important;
+}
+
 
 nav.bg-primary{
   background-color: purple !important;

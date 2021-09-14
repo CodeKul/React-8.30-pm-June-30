@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- https://codepen.io/solygambas/details/xxRQEOy 
+    
+        https://lavrton.com/case-study-seat-reservation-widget/
+    -->
+
+    <style>
+        canvas{
+            border: solid 1px red;
+        }
+    </style>
+</head>
+<body>
+    <canvas height="400" width="400" id="graphic">
+
+    </canvas>
+
+    <script>
+        
+        let graphic = document.getElementById("graphic");
+        let pointer = graphic.getContext("2d")
+        // pointer.fillStyle = "red"
+        // pointer.fillRect(10,20,200,100)
+        // pointer.strokeRect
+        // pointer.lineTo()
+
+        // pointer.beginPath();
+        // pointer.arc(80,50,50,0,2*Math.PI)
+       
+        // pointer.fillStyle="green"
+        //  //pointer.fill();
+       
+        // pointer.strokeStyle="purple"
+        // pointer.stroke();
+
+        pointer.moveTo(10,20)
+        pointer.lineTo(350,200);
+        pointer.stroke();
+
+    </script>
+</body>
+</html>
